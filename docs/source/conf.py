@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_multiversions',
 ]
 
 intersphinx_mapping = {
@@ -26,6 +27,9 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
+smv_tag_whitelist = r'^v\d+\.\d+(\.\d+)?(-\S*)?$'
+smv_branch_whitelist = r'^main$'
+smv_remote_whitelist = 'origin'
 
 # -- Options for HTML output
 
